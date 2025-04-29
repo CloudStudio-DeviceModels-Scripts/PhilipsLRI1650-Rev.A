@@ -20,13 +20,10 @@ function getEndpoints(deviceAddress, endpoints)
   // todos los endpoints incluidos en el dispositivo automáticamente cuando se 
   // crea el dispositivo.
 
-  // En el código siguiente, se crean dos endpoints. El primero es un sensor de 
-  // temperatura, mientras que el segundo es un sensor de dióxido de carbono.
-
    var lz = endpoints.addEndpoint("1", "Nivel luz", endpointType.genericSensor);
-   lz.variableTypeId = 1189;
+   lz.variableTypeId = 1012;
    var d = endpoints.addEndpoint("2", "Dimmer", endpointType.genericSensor);
-   d.variableTypeId = 1189;
+   d.variableTypeId = 1012;
    endpoints.addEndpoint("4", "Voltaje", endpointType.voltageSensor);
    endpoints.addEndpoint("5", "Corriente", endpointType.currentSensor);
 }
